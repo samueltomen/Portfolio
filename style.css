@@ -1,0 +1,99 @@
+*,body ::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+/* Header */
+
+
+/* Main */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebf2fa;
+  }
+  
+  .project {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .project:hover .project-overlay {
+    opacity: 1;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  
+  .project-description {
+    font-size: 0.8em
+  }  
+
+  /* Footer */
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+  }
+  
+  footer p {
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animations */
+  footer {
+    animation: fadeInUp 0.5s ease-out 0.5s both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
