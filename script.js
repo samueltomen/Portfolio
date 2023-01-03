@@ -1,7 +1,7 @@
-'use strict'
+// 'use strict'
 
-const menuHamburger = document.getElementById('menu-hamburger');
-const menu= document.getElementById('menu');
-menuHamburger.addEventListener('click', function() {
-  menu.classList.toggle('active');
-});
+// const menuHamburger = document.getElementById('menu-hamburger');
+// const menu= document.getElementById('menu');
+// menuHamburger.addEventListener('click', function() {
+//   menu.classList.toggle('active');
+// });
