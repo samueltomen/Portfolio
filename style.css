@@ -8,6 +8,9 @@
 
 /* Header */
 
+#navbarNav{
+  padding-left: 9em;
+}
 
 /* Main */
 
@@ -16,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ebf2fa;
+    padding: 5em 0;
   }
   
   .project {
